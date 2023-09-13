@@ -1,6 +1,4 @@
-*{
-    font-family: 'Open Sans', sans-serif;
-}
+
 
 html{
     scroll-behavior: smooth;
@@ -33,7 +31,7 @@ ul{
 }
 .navbar-brand{
     color: #E84545;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 900;
     
     text-transform: uppercase;
@@ -72,6 +70,13 @@ ul{
     margin: auto;
 }
 
+@media (min-width: 319px) and (max-width:480px) {
+    .hero-banner{
+        padding: 100px 0px;
+        min-height: 200px;
+    }
+  }
+
 .hero-banner::before{
     content: "";
     position: absolute;
@@ -97,10 +102,25 @@ ul{
 
 
 .banner-text-wrap h1{
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 60px;
+    font-weight: 900 !important;
     ;
 }
+
+@media (min-width: 319px) and (max-width:480px) {
+    .banner-text-wrap h1{
+        font-size: 40px;
+        font-weight: 900 !important;
+        ;
+    }
+  }
+
+  @media (min-width: 319px) and (max-width:480px) {
+    .banner-text-wrap P{
+        text-align: justify
+        ;
+    }
+  }
 
 .btn{
     font-weight: 700;
@@ -148,7 +168,6 @@ ul{
     
     line-height: 2.0rem;
 }
-
 
 
 
